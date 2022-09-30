@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sonybuy</title>
+  <link rel="shortcut icon" href="img/tab.png" type="image/x-icon" />
+</head>
+<style>
+  @font-face {
+    src: url(font/BAHNSCHRIFT\ 9.TTF);
+    font-family: bahn;
+  }
+
+  body {
+    background-size: cover;
+    height: 610px;
+  }
+  .nav {
+display: grid;
+grid-template-columns: 150px 150px 150px;
+font-size: 20px;
+margin-top: 100px;
+margin-left: 390px;
+font-family: bahn;
+text-decoration: none;
+}
+
+.nav a {
+text-decoration: none;
+}
+.Tickets {
+color: #f49f0d;
+}
+
+  .sub {
+    display: grid;
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    margin-left: 330px;
+    margin-top: 20px;
+    width: 101px;
+    color: #1f315a;
+    font-family: bahn;
+    background-color: #e6720c6a;
+    border: solid 2px #e6720c6a;
+    width: 180px;
+    border-radius: 40px;
+  }
+
+  .sub:hover {
+    color: white;
+    background-color: #1f315a;
+    border: solid 2px #1f315a;
+  }
+
+  .client-g {
+    display: grid;
+    grid-template-columns: 235px 235px;
+    margin-top: 100px;
+    margin-left: 7%;
+    gap: 15px 35px;
+
+  }
+
+  input {
+    border-radius: 40px;
+    border: solid #f49f0d;
+    height: 50px;
+    font-family: bahn;
+    font-size: 20px;
+    color: #1f315a;
+  }
+  .log{
+display: grid;
+text-decoration: none;
+text-align: center;
+font-size: 30px;
+margin-left: 165px;
+margin-top: 30px;
+color: #1f315a;
+font-family:  bahn;
+background-color: #e6720c6a;
+border: solid 2px #e6720c6a;
+width: 180px;
+border-radius: 40px;
+font-size: bold;
+}
+.log:hover{
+color: white;
+background-color: #1f315a;
+border: solid 2px #1f315a;
+}
+::placeholder {
+    color:#1f315a;
+padding: 8px;
+  }
+</style>
+
+<body background="img/g.png">
+  <div class="nav">
+    <a href="Home.html">
+      <b>Home</b>
+    </a>
+    <a href="tickets.html" class="Tickets"><b >Tickets</b></a>
+    <a href="LogIn.html" ><b>LogIn</b></a>
+  </div>
+  <form action="Submit.php" method="post" onsubmit="myFunction()">
+    <div class="client-g">
+      <input type="text" name="CustomerName" placeholder="Customer name :" required>
+      <input type="text" name="ProductCategory" placeholder="Product category :" required >
+      <input type="number" name="PhoneNumber" placeholder="Phone number :" required >
+      <input type="date" name="PurchasedDate" title="Purchased date:" required>
+      <input type="email" name="Email" placeholder="Email :" required>
+      <input type="number" name="ProductSerialNumber" placeholder="Product serial number :" required >
+      <input type="date" name="TicketDate" title="Ticket issue date:" required >
+      <input type="text" name="ProblemDescription" placeholder="Problem description :" required>
+      <input type="submit" value="Submit" class="log">
+    </div>
+  </form>
+  <script>
+    function myFunction() {
+  alert("The form was submitted");
+}
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sonybuy</title>
+    <link rel="shortcut icon" href="img/logo-tab.png" type="image/x-icon" />
+  </head>
+  <style>
+    @font-face {
+    src: url(font/BAHNSCHRIFT\ 9.TTF);
+    font-family: bahn ;
+    }
+    body {
+    background-size: cover;
+    height: 610px;
+    }
+    
+    .nav {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    font-size: 20px;
+    margin-top: 100px;
+    margin-left: 385px;
+    font-family: bahn;
+    text-decoration: none;
+    }
+    
+    .nav a {
+    text-decoration: none;
+    }
+    
+    .Tickets {
+    color: #f49f0d;
+    }
+    #text1{
+    display: grid;
+    font-family: bahn;
+    font-size: 22px;
+    width: 122px;
+    height: 10px;
+    margin-top: 10px;
+    margin-left: 8px;
+    text-align: left;
+    }
+    #text3{
+    display: grid;
+    font-family: bahn;
+    font-size: 22px;
+    width: 122px;
+    height: 10px;
+    margin-top: 10px;
+    margin-left: 8px;
+    text-align: left;
+    }
+    
+    #text2{
+    display: block;
+    background-color: white;
+    font-family: bahn;
+    margin-left: 35px;
+    text-align: left;
+    width: 300px;
+    height: 50px;
+    border-radius: 40px;
+    font-size: 26px;
+    text-align: left;
+    color:  #1f315a;
+    border:  solid #f49f0d;
+    
+    
+    }
+    
+    #text4{
+    display: block;
+    background-color: white;
+    font-family: bahn;
+    margin-top: 40px;
+    margin-left: 35px;
+    text-align: left;
+    width: 300px;
+    height: 50px;
+    border-radius: 40px;
+    font-size: 26px;
+    border: solid #f49f0d;
+    }
+    
+    .margin {
+    display: grid;
+    grid-template-columns: 300px;
+    color: #1f315a;
+    font-family:bahn;
+    margin-top: 30px;
+    margin-left: 225px;
+    }
+    
+    h1{
+    font-size:45px;
+    margin-left: 310px;
+    margin-top: 120px;
+    color: #1f315a;
+    font-family: bahn;
+    }
+    
+    b {
+    padding: 5px;
+    }
+    .margin a {
+    text-decoration: none;
+    }
+
+    .log{
+    display: grid;
+    text-decoration: none;
+    text-align: center;
+    font-size: 30px;
+    margin-left: 95px;
+    margin-top: 50px;
+    color: #1f315a;
+    font-family:  bahn;
+    background-color: #e6720c6a;
+    border: solid 2px #e6720c6a;
+    width: 180px;
+    border-radius: 40px;
+    font-size: bold;
+    }
+    .log:hover{
+    color: white;
+    background-color: #1f315a;
+    border: solid 2px #1f315a;
+    }
+    ::placeholder {
+        color: #1f315a;
+    padding: 20px;
+      }
+    
+    
+  </style>
+
+  <body background="img/g.png">
+    <div class="nav">
+      <a href="Home.html">
+        <b>Home</b>
+      </a>
+      <a href="tickets.html"><b >Tickets</b></a>
+      <a href="LogIn.html" class="Tickets" ><b>LogIn</b></a>
+    </div>
+    <h1>Employee</h1>
+    <div class="margin">
+        <div class="bor">
+          <form action="Employee_log.php" method="post">
+            <label id="text1" for="text2"><b> </b></label>
+            <input id="text2" name="Eusername" type="text" placeholder="Username:" required>
+            </div>
+            <div class="bor">
+                
+                <input id="text4" name="Epassword" type="password" placeholder="Password :" minlength="5" maxlength="8" required>
+            </div>
+            <input type="submit" value="LOG IN" class="log">
+          </form>
+    </div>
+  </body>
+</html>
